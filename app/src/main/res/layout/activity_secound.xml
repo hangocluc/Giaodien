@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:layout_margin="10dp"
+
     tools:context=".modle.Secound">
 
     <TextView
@@ -56,7 +56,7 @@ android:layout_margin="10dp"
 
     <EditText
         android:id="@+id/edt_fullname_second"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
         android:hint="Ex:Yamada Toro"
@@ -79,7 +79,7 @@ android:layout_margin="10dp"
 
     <EditText
         android:id="@+id/edt_adress_second"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
@@ -103,14 +103,12 @@ android:layout_margin="10dp"
 
     <EditText
         android:id="@+id/edt_number_second"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="43dp"
-        android:gravity="left"
         android:hint="Ex:0123456"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="@+id/guideline"
         app:layout_constraintRight_toRightOf="@+id/guideline4"
-
         app:layout_constraintTop_toBottomOf="@id/txt_number_second" />
 
     <TextView
@@ -127,7 +125,7 @@ android:layout_margin="10dp"
 
     <EditText
         android:id="@+id/edt_password_second"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
@@ -150,7 +148,7 @@ android:layout_margin="10dp"
 
     <EditText
         android:id="@+id/edt_confrim_secound"
-        android:layout_width="400dp"
+        android:layout_width="390dp"
         android:layout_height="43dp"
         android:hint="Enter confirm password"
         app:layout_constraintHorizontal_bias="0"
@@ -209,7 +207,7 @@ android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="376dp" />
+        app:layout_constraintGuide_end="394dp" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -217,5 +215,5 @@ android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="376dp" />
+        app:layout_constraintGuide_begin="395dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
