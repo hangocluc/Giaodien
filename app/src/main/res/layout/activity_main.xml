@@ -77,12 +77,10 @@
         />
 
     <Button
-        android:layout_width="245dp"
-        android:layout_height="58dp"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
-        android:autoText="false"
-        android:background="#C59812"
-        android:capitalize="none"
+        android:background="@drawable/shape"
         android:text="Login in"
         android:textColor="#FFFFFF"
         app:layout_constraintLeft_toLeftOf="parent"
