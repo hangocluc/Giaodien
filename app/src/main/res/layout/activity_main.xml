@@ -81,6 +81,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/shape"
+        android:id="@+id/btn_login"
         android:text="Login in"
         android:textColor="#FFFFFF"
         app:layout_constraintLeft_toLeftOf="parent"

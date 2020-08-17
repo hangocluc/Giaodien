@@ -5,7 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.baitap1.modle.Secound
+import com.example.baitap1.modle.SecoundActivity
+import com.example.baitap1.modle.ThreeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         txt_singup.setOnClickListener {
-            val intent = Intent(this, Secound::class.java)
+            val intent = Intent(this, SecoundActivity::class.java)
             startActivity(intent);
         }
 
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
             builder.setView(dialog)
             val close = builder.create()
             close.show()
+        }
+        btn_login.setOnClickListener {
+           val intent =Intent(this,ThreeActivity::class.java)
+             val bundle = Bundle()
+            intent.putExtra("m",bundle)
+            startActivity(intent)
         }
 
     }

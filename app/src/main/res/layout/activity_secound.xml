@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".modle.Secound">
+    tools:context=".modle.SecoundActivity">
 
     <TextView
         android:id="@+id/txt_login_second"
@@ -14,8 +14,8 @@
         android:text="Log in"
         android:textColor="#FF9800"
         app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintLeft_toLeftOf="@id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -26,8 +26,8 @@
         android:text="Create Acount"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_login_second" />
 
     <TextView
@@ -37,8 +37,8 @@
         android:layout_marginTop="2dp"
         android:text="Create an acount to access all fecatures"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_create_second" />
 
 
@@ -49,21 +49,32 @@
         android:layout_marginTop="8dp"
         android:text="Full name *"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_on_second" />
 
 
     <EditText
         android:id="@+id/edt_fullname_second"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/white"
         android:hint="Ex:Yamada Toro"
+        android:padding="0dp"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt_fullname" />
+
+    <TextView
+        android:id="@+id/under_line_full_name"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_fullname_second"
+        app:layout_constraintStart_toStartOf="@+id/edt_fullname_second" />
 
 
     <TextView
@@ -73,21 +84,31 @@
         android:layout_marginTop="8dp"
         android:text="Email Address *"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/edt_fullname_second" />
 
     <EditText
         android:id="@+id/edt_adress_second"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/white"
         android:gravity="left"
         android:hint="Enter email"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_adress_second" />
+
+    <TextView
+        android:id="@+id/unlike_address"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_adress_second"
+        app:layout_constraintStart_toStartOf="@+id/edt_adress_second" />
 
     <TextView
         android:id="@+id/txt_number_second"
@@ -96,20 +117,32 @@
         android:layout_marginTop="8dp"
         android:text="Phone number *"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/edt_adress_second" />
 
 
     <EditText
         android:id="@+id/edt_number_second"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="43dp"
         android:hint="Ex:0123456"
+        android:padding="0dp"
+        android:background="@android:color/white"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_number_second" />
+
+    <TextView
+        android:id="@+id/unlike_number"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/edt_number_second"
+        app:layout_constraintTop_toBottomOf="@id/edt_number_second" />
+
 
     <TextView
         android:id="@+id/txt_password_second"
@@ -118,22 +151,35 @@
         android:layout_marginTop="8dp"
         android:text="Password *"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/edt_number_second" />
 
 
     <EditText
         android:id="@+id/edt_password_second"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
+        android:padding="0dp"
         android:hint="Enter Password"
+        android:background="@android:color/white"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_password_second" />
+<TextView
+    android:id="@+id/unlike_pass"
+    android:layout_width="370dp"
+    android:layout_height="1dp"
+    android:visibility="visible"
+    app:layout_constraintStart_toStartOf="@id/edt_password_second"
+    app:layout_constraintBottom_toBottomOf="@id/edt_password_second"
+    android:background="@android:color/black"
+    />
+
+
 
     <TextView
         android:id="@+id/txt_confirm_second"
@@ -142,20 +188,32 @@
         android:layout_marginTop="8dp"
         android:text="Confirm Password *"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/edt_password_second" />
 
     <EditText
         android:id="@+id/edt_confrim_secound"
-        android:layout_width="390dp"
+        android:layout_width="360dp"
         android:layout_height="43dp"
         android:hint="Enter confirm password"
+        android:padding="0dp"
+        android:background="@android:color/white"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/txt_confirm_second" />
 
+    <TextView
+        android:id="@+id/unlike_confrim"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/edt_confrim_secound"
+        app:layout_constraintBottom_toBottomOf="@id/edt_confrim_secound"
+        android:background="@android:color/black"
+
+        />
     <CheckBox
         android:id="@+id/ckb_check"
         android:layout_width="wrap_content"
@@ -163,8 +221,8 @@
         android:layout_marginTop="8dp"
         android:text="I have read and agree to"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/edt_confrim_secound" />
 
     <TextView
@@ -173,9 +231,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:autoLink="web"
+        app:layout_constraintHorizontal_bias="0.480"
         android:text="Term &amp; Condition | Privacy Policy"
-        app:layout_constraintLeft_toLeftOf="@id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ckb_check" />
 
     <TextView
@@ -183,10 +242,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.400"
         android:text="Bussiness Low &amp; Natation"
-        app:layout_constraintLeft_toLeftOf="@id/guideline"
-        app:layout_constraintRight_toRightOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt_textlastone_second" />
 
     <Button
@@ -201,19 +260,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt_textlastwo_second" />
 
-
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="394dp" />
-
+        app:layout_constraintGuide_begin="20dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
+        app:layout_constraintGuide_begin="20dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
